@@ -1321,7 +1321,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
+                    text=f"➲ [{get_size(file.file_size)}] || {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1330,11 +1330,11 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}",
+                    text=f"|| {file.file_name}",
                     callback_data=f'{pre}#{req}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"📁{get_size(file.file_size)}",
+                    text=f"➲ {get_size(file.file_size)}",
                     callback_data=f'{pre}#{req}#{file.file_id}',
                 ),
             ]
@@ -1351,12 +1351,12 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🔖 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-             InlineKeyboardButton(text="ɴᴇxᴛ ✧", callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"📋 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
+             InlineKeyboardButton(text="|𝐍𝚎𝚡𝚝⧁", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🔖 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="‼️𝐍𝚘 𝐌𝚘𝚛𝚎 𝐍𝚎𝚡𝚝 𝐏𝚊𝚐𝚎‼️", callback_data="pages")]
         )   
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -1438,21 +1438,21 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         search, files, offset, total_results = pmspoll
     pre = 'pmfilep' if PROTECT_CONTENT else 'pmfile'
     if SINGLE_BUTTON:
-        btn = [[InlineKeyboardButton(text=f"📁[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}')] for file in files]
+        btn = [[InlineKeyboardButton(text=f"➲ [{get_size(file.file_size)}] || {file.file_name}", callback_data=f'{pre}#{file.file_id}')] for file in files]
     else:
-        btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'{pre}#{file.file_id}',),
-              InlineKeyboardButton(text=f"📁{get_size(file.file_size)}", callback_data=f'{pre}_#{file.file_id}')] for file in files ]             
+        btn = [[InlineKeyboardButton(text=f"|| {file.file_name}", callback_data=f'{pre}#{file.file_id}',),
+              InlineKeyboardButton(text=f"➲ {get_size(file.file_size)}", callback_data=f'{pre}_#{file.file_id}')] for file in files ]             
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         PM_BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🔖 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-            InlineKeyboardButton(text="ɴᴇxᴛ ✧", callback_data=f"pmnext_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"📋 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
+            InlineKeyboardButton(text="|𝐍𝚎𝚡𝚝⧁", callback_data=f"pmnext_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🔖 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="‼️𝐍𝚘 𝐌𝚘𝚛𝚎 𝐍𝚎𝚡𝚝 𝐏𝚊𝚐𝚎‼️", callback_data="pages")]
         )
     imdb = await get_poster(search) if IMDB else None
     TEMPLATE = IMDB_TEMPLATE
@@ -1553,14 +1553,14 @@ async def pm_spoll_choker(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg",caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>")
+        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg",caption="<b><u>🤔 𝐒𝚙𝚎𝚕𝚕𝚒𝚗𝚐 𝐌𝚒𝚜𝚝𝚊𝚔𝚎 𝐁𝚛𝚘 ‼️</u>\n\n𝐃𝚘𝚗'𝚝 𝐖𝚘𝚛𝚛𝚢 😎 𝐂𝚑𝚘𝚘𝚜𝚎 𝐓𝚑𝚎 𝐂𝚘𝚛𝚛𝚎𝚌𝚝 𝐎𝚗𝚎 𝐁𝚎𝚕𝚘𝚠👇</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
     PM_SPELL_CHECK[msg.id] = movielist
     btn = [[InlineKeyboardButton(text=movie.strip(), callback_data=f"pmspolling#{user}#{k}")] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="ᴄʟᴏsᴇ ✗", callback_data=f'pmspolling#{user}#close_spellcheck')])
-    await msg.reply("<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
+    await msg.reply("<b><u>🤔 𝐒𝚙𝚎𝚕𝚕𝚒𝚗𝚐 𝐌𝚒𝚜𝚝𝚊𝚔𝚎 𝐁𝚛𝚘 ‼️</u>\n\n𝐃𝚘𝚗'𝚝 𝐖𝚘𝚛𝚛𝚢 😎 𝐂𝚑𝚘𝚘𝚜𝚎 𝐓𝚑𝚎 𝐂𝚘𝚛𝚛𝚎𝚌𝚝 𝐎𝚗𝚎 𝐁𝚎𝚕𝚘𝚠👇</b>", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
 
 async def advantage_spell_chok(msg):
     query = re.sub(
@@ -1571,7 +1571,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg", caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>")
+        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg", caption="<b><u>🤔 𝐒𝚙𝚎𝚕𝚕𝚒𝚗𝚐 𝐌𝚒𝚜𝚝𝚊𝚔𝚎 𝐁𝚛𝚘 ‼️</u>\n\n𝐃𝚘𝚗'𝚝 𝐖𝚘𝚛𝚛𝚢 😎 𝐂𝚑𝚘𝚘𝚜𝚎 𝐓𝚑𝚎 𝐂𝚘𝚛𝚛𝚎𝚌𝚝 𝐎𝚗𝚎 𝐁𝚎𝚕𝚘𝚠👇</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1601,7 +1601,7 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         one_button = InlineKeyboardMarkup([[InlineKeyboardButton("🔎𝗚𝗢𝗢𝗚𝗟𝗘🔍", url="https://www.google.com/search?q={reqst_gle}")]])
-        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg", caption="<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>", reply_markup = one_button)
+        k = await msg.reply_Photo(Photo="https://telegra.ph/file/9eb2cbd95c4b216c79bc6.jpg", caption="<b><u>🤔 𝐒𝚙𝚎𝚕𝚕𝚒𝚗𝚐 𝐌𝚒𝚜𝚝𝚊𝚔𝚎 𝐁𝚛𝚘 ‼️</u>\n\n𝐃𝚘𝚗'𝚝 𝐖𝚘𝚛𝚛𝚢 😎 𝐂𝚑𝚘𝚘𝚜𝚎 𝐓𝚑𝚎 𝐂𝚘𝚛𝚛𝚎𝚌𝚝 𝐎𝚗𝚎 𝐁𝚎𝚕𝚘𝚠👇</b>", reply_markup = one_button)
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1613,7 +1613,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="ᴄʟᴏsᴇ ✗", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("<b><u>🤔 sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ʙʀᴏ ‼️</u>\n\nᴅᴏɴ'ᴛ ᴡᴏʀʀʏ 🥹 ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>",
+    await msg.reply("<b><u>🤔 𝐒𝚙𝚎𝚕𝚕𝚒𝚗𝚐 𝐌𝚒𝚜𝚝𝚊𝚔𝚎 𝐁𝚛𝚘 ‼️</u>\n\n𝐃𝚘𝚗'𝚝 𝐖𝚘𝚛𝚛𝚢 😎 𝐂𝚑𝚘𝚘𝚜𝚎 𝐓𝚑𝚎 𝐂𝚘𝚛𝚛𝚎𝚌𝚝 𝐎𝚗𝚎 𝐁𝚎𝚕𝚘𝚠👇</b>",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 async def manual_filters(client, message, text=False):
