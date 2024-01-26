@@ -25,7 +25,7 @@ async def start(client, message):
             InlineKeyboardButton('📢 𝐔𝚙𝚍𝚊𝚝𝚎𝚜 𝐂𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/cinema_flix_updates'),
             InlineKeyboardButton('𝐌𝚘𝚟𝚒𝚎 𝐆𝚛𝚘𝚞𝚙 ✨️', url='https://t.me/+iEbhY7mM4oE1OTVl')
             ],[
-            InlineKeyboardButton('〄 ᴄʜᴇᴄᴋ ᴍʏ ᴘᴍ ʙʀᴏ 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton('〄 𝐂𝚑𝚎𝚌𝚔 𝐌𝚢 𝐏𝚖 𝐁𝚛𝚘 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
@@ -259,7 +259,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                  [
-                  InlineKeyboardButton('✨️ Support Group ✨️', url="https://t.me/+iEbhY7mM4oE1OTVl")
+                  InlineKeyboardButton('✨️ 𝐌𝚘𝚟𝚒𝚎 𝐆𝚛𝚘𝚞𝚙 ✨️', url="https://t.me/+iEbhY7mM4oE1OTVl")
                  ]
                 ]
             )
