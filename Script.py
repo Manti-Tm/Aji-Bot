@@ -11,10 +11,10 @@ class script(object):
 
 <b>🔹 𝖡𝗈𝗍 𝖲𝖾𝗋𝗏𝖾𝗋 : <a href=https://t.me/http://Railway.com/>Railway</b></a>"""
 
-    SOURCE_TXT = """<b>📍ɪғ ʏᴏᴜ ᴜsᴇ ɪɴ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ's..!!
+    SOURCE_TXT = """<b>📍𝖨𝖿 𝖸𝗈𝗎 𝖴𝗌𝖾 𝗂𝗇 𝖳𝗁𝖾 𝖱𝖾𝗉𝗈 𝖠𝗇𝖽 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖮𝗐𝗇𝖾𝗋'𝗌..!!
 
 <u>ᴅᴇᴠs :</u>
-㊂ ᴅᴇᴠ ❶| <a href=https://t.me/TG_x_filter>『sᴜɴᴇᴇsʜ࿐Tɢ』#Official™🇮🇳</a>
+㊂ ᴅᴇᴠ ❶| <a href=https://t.me/TG_x_filter>🇮🇳ᴍᴀɴᴛɪs™◢ ◤</a>
 ㊂ ᴅᴇᴠ ❷| <a href=https://t.me/dxfilter>ꪶ‌ꪆ KD Tech [#Offline] 🇮🇳</b></a>"""
 
 
