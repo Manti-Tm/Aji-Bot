@@ -1,11 +1,15 @@
 class script(object):   
     HELP_TXT = """<b>ʜᴇʏ,{} ʜᴇʀᴇ ɪs ᴍʏ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b>◎ɴᴀᴍᴇ: {}</b>
-<b>◎ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/TG_x_filter>『sᴜɴᴇᴇsʜ࿐Tɢ』#Official™🇮🇳</b></a>
-<b>◎ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 3</b>
-<b>◎ᴅᴀᴛᴀʙᴀsᴇ: ᴍᴏɴɢᴏ ᴅʙ</b>
-<b>◎ʙᴏᴛ sᴇʀᴠᴇʀ: <a href=https://t.me/copycod_Official>ᴀɴʏᴡʜᴇʀᴇ</b></a>"""
+    ABOUT_TXT = """<b>⚜️ 𝖭𝖺𝗆𝖾 : {}</b>
+    
+<b>🔸 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href=https://t.me/TG_x_filter>🇮🇳ᴍᴀɴᴛɪs™◢ ◤</b></a>
+
+<b>🔹 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇3</b>
+
+<b>🔸 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾 : 𝖬𝗈𝗇𝗀𝗈 𝖣𝖡</b>
+
+<b>🔹 𝖡𝗈𝗍 𝖲𝖾𝗋𝗏𝖾𝗋 : <a href=https://t.me/http://Railway.com/>Railway</b></a>"""
 
     SOURCE_TXT = """<b>📍ɪғ ʏᴏᴜ ᴜsᴇ ɪɴ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ's..!!
 
