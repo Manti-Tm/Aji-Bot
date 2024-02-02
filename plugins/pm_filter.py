@@ -1356,7 +1356,15 @@ async def auto_filter(client, msg, spoll=False):
     else:
         btn.append(
             [InlineKeyboardButton(text="‼️𝐍𝚘 𝐌𝚘𝚛𝚎 𝐍𝚎𝚡𝚝 𝐏𝚊𝚐𝚎‼️", callback_data="pages")]
-        )   
+        )
+    user = message.from_user
+    full_name = user.first_name + " " + user.last_name if user.last_name else user.first_name
+    waiting_message = await message.reply_text(f"Setting up your request {full_name}...")
+    await asyncio.sleep(1)
+    await waiting_message.delete()
+    serve_message = await message.reply_text(f"🥰")
+    fetching_message = await message.reply_text(f"Fetching details from server {full_name}...")
+    
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
@@ -1453,6 +1461,14 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         btn.append(
             [InlineKeyboardButton(text="‼️𝐍𝚘 𝐌𝚘𝚛𝚎 𝐍𝚎𝚡𝚝 𝐏𝚊𝚐𝚎‼️", callback_data="pages")]
         )
+    user = message.from_user
+    full_name = user.first_name + " " + user.last_name if user.last_name else user.first_name
+    waiting_message = await message.reply_text(f"Setting up your request {full_name}...")
+    await asyncio.sleep(1)
+    await waiting_message.delete()
+    serve_message = await message.reply_text(f"🥰")
+    fetching_message = await message.reply_text(f"Fetching details from server {full_name}...")
+    
     imdb = await get_poster(search) if IMDB else None
     TEMPLATE = IMDB_TEMPLATE
     if imdb:
