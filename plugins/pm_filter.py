@@ -268,7 +268,7 @@ async def next_page(bot, query):
     except MessageNotModified:
            await query.answer()
     else:
-          await query.answer(f"𝖲𝗈𝗋𝗋𝗒, 𝖭𝗈 𝖥𝗂𝗅𝖾𝗌 𝖥𝗈𝗎𝗇𝖽 𝖥𝗈𝗋 𝖸𝗈𝗎𝗋 𝖰𝗎𝖾𝗋𝗒{movie}.", show_alert=True))
+          await query.answer(f"𝖲𝗈𝗋𝗋𝗒, 𝖭𝗈 𝖥𝗂𝗅𝖾𝗌 𝖥𝗈𝗎𝗇𝖽 𝖥𝗈𝗋 𝖸𝗈𝗎𝗋 𝖰𝗎𝖾𝗋𝗒{movie}.", show_alert=True)
         
 @Client.on_callback_query(filters.regex(r"^select_lang"))
 async def select_language(bot, query):
