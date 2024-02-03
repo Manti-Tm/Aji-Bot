@@ -232,7 +232,7 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f"ᴄʜᴇᴄᴋ ʙᴏᴛ ᴘᴍ", url="https://t.me/Elizabeth_Movie_Bot"),
+            InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{req}"),
             InlineKeyboardButton(f"ᴛᴏᴛᴀʟ ғɪʟᴇs: {len(btn)}", callback_data="files")
         ]
     )    
