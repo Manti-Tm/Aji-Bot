@@ -266,10 +266,9 @@ async def next_page(bot, query):
             reply_markup=InlineKeyboardMarkup(btn)
         )
     except MessageNotModified:
-        pass
-    await query.answer()
-else:
-    await query.answer(.....)
+           await query.answer()
+    else:
+          await query.answer(.....)
         
 @Client.on_callback_query(filters.regex(r"^select_lang"))
 async def select_language(bot, query):
