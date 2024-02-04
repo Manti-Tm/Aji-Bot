@@ -53,7 +53,7 @@ async def save_group(bot, message):
                     pass
             if WELCOM_PIC:
                 temp.MELCOW['welcome'] = await message.reply_photo(
-                                                 photo=(MELCOW_IMG),
+                                                 photo=(WELCOM_PIC),
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
