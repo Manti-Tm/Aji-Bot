@@ -159,22 +159,20 @@ async def pm_next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⧀𝐁𝚊𝚌𝚔|", callback_data=f"pmnext_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("🗑 Delete", callback_data=f'spolling#{user}#close_spellcheck')]
+            [InlineKeyboardButton("⧀𝖡𝖺𝖼𝗄|", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages")]
+    
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("|𝐍𝚎𝚡𝚝⧁", callback_data=f"pmnext_{req}_{key}_{n_offset}"),
-             InlineKeyboardButton("🗑 Delete", callback_data=f'spolling#{user}#close_spellcheck')])
+             InlineKeyboardButton("|𝖭𝖾𝗑𝗍⧁", callback_data=f"pmnext_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⧀𝐁𝚊𝚌𝚔|", callback_data=f"pmnext_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("⧀𝖡𝖺𝖼𝗄|", callback_data=f"pmnext_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("🗑 ", callback_data=f'spolling#{user}#close_spellcheck'),
-                InlineKeyboardButton("|𝐍𝚎𝚡𝚝⧁", callback_data=f"pmnext_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("|𝖭𝖾𝗑𝗍⧁", callback_data=f"pmnext_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -248,23 +246,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⧀𝐁𝚊𝚌𝚔|", callback_data=f"next_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("⧀𝖡𝖺𝖼𝗄|", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
-                                  callback_data="pages"),
-             InlineKeyboardButton("🗑 Delete", callback_data=f'spolling#{user}#close_spellcheck')]
+                                  callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("|𝐍𝚎𝚡𝚝⧁", callback_data=f"next_{req}_{key}_{n_offset}"),
-             InlineKeyboardButton("🗑 Delete", callback_data=f'spolling#{user}#close_spellcheck')])
+             InlineKeyboardButton("|𝖭𝖾𝗑𝗍⧁", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⧀𝐁𝚊𝚌𝚔|", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("⧀𝖡𝖺𝖼𝗄|", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("🗑 ", callback_data=f'spolling#{user}#close_spellcheck'),
-                InlineKeyboardButton("|𝐍𝚎𝚡𝚝⧁", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("|𝖭𝖾𝗑𝗍⧁", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -1361,11 +1356,11 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"📋 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-             InlineKeyboardButton(text="|𝐍𝚎𝚡𝚝⧁", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton(text="|𝖭𝖾𝗑𝗍⧁", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="‼️𝐍𝚘 𝐌𝚘𝚛𝚎 𝐍𝚎𝚡𝚝 𝐏𝚊𝚐𝚎‼️", callback_data="pages")]
+            [InlineKeyboardButton(text="!! 𝖭𝗈 𝖬𝗈𝗋𝖾 𝖭𝖾𝗑𝗍 𝖯𝖺𝗀𝖾 !!", callback_data="pages")]
         )
     user = message.from_user
     full_name = user.first_name + " " + user.last_name if user.last_name else user.first_name
@@ -1464,11 +1459,11 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"📋 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-            InlineKeyboardButton(text="|𝐍𝚎𝚡𝚝⧁", callback_data=f"pmnext_{req}_{key}_{offset}")]
+            InlineKeyboardButton(text="|𝖭𝖾𝗑𝗍⧁", callback_data=f"pmnext_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="‼️𝐍𝚘 𝐌𝚘𝚛𝚎 𝐍𝚎𝚡𝚝 𝐏𝚊𝚐𝚎‼️", callback_data="pages")]
+            [InlineKeyboardButton(text="!! 𝖭𝗈 𝖬𝗈𝗋𝖾 𝖭𝖾𝗑𝗍 𝖯𝖺𝗀𝖾 !!", callback_data="pages")]
         )
     user = message.from_user
     full_name = user.first_name + " " + user.last_name if user.last_name else user.first_name
