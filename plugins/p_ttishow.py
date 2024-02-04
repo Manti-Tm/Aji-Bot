@@ -52,9 +52,21 @@ async def save_group(bot, message):
                 except:
                     pass
             if WELCOM_PIC:
-                temp.MELCOW['welcome'] = await message.reply_photo(photo=WELCOM_PIC, caption=WELCOM_TEXT.format(user=u.mention, chat=message.chat.title))
-            else:
-                temp.MELCOW['welcome'] = await message.reply_text(text=WELCOM_TEXT.format(user=u.mention, chat=message.chat.title))
+                temp.MELCOW['welcome'] = await message.reply_photo(
+                                                 photo=(MELCOW_IMG),
+                                                 caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
+                                                 reply_markup=InlineKeyboardMarkup(
+                                                                         [[
+                                                                           InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/cinema_flix_updates'),
+                                                                           InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/cinema_flix_updates')
+                                                                        ]]
+                                                 ),
+                                                 parse_mode=enums.ParseMode.HTML
+                )
+                
+        if settings["auto_delete"]:
+            await asyncio.sleep(600)
+            await (temp.MELCOW['welcome']).delete()
                                                  
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
