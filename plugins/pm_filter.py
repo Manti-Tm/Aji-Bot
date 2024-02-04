@@ -233,8 +233,14 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{req}"),
-            InlineKeyboardButton(f"ᴛᴏᴛᴀʟ ғɪʟᴇs: {len(btn)}", callback_data="files")
+            InlineKeyboardButton(f'🎬 {search} 🎬', 'dupe')
+        ]
+    )
+    btn.insert(1,
+        [
+            InlineKeyboardButton(f'𝖬𝗈𝗏𝗂𝖾𝗌', 'minfo'),
+            InlineKeyboardButton(f'𝖨𝗇𝖿𝗈', 'info'),
+            InlineKeyboardButton(f"𝖥𝗂𝗅𝖾𝗌: {len(btn)}", callback_data="files")
         ]
     )    
 
@@ -607,7 +613,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('✨️ 𝐌𝚘𝚟𝚒𝚎 𝐆𝚛𝚘𝚞𝚙 ✨️', url="https://t.me/+iEbhY7mM4oE1OTVl")
+                  InlineKeyboardButton('✨️ 𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 ✨️', url="https://t.me/+iEbhY7mM4oE1OTVl")
                  ]
                 ]
             )                                       
@@ -1344,10 +1350,16 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-    btn.insert(0,
-        [ 
-            InlineKeyboardButton(f"ᴄʜᴇᴄᴋ ʙᴏᴛ ᴘᴍ", url="https://t.me/Elizabeth_Movie_Bot"),
-            InlineKeyboardButton(f"ᴛᴏᴛᴀʟ ғɪʟᴇs: {len(btn)}", callback_data="files")
+    btn.insert(0, 
+        [
+            InlineKeyboardButton(f'🎬 {search} 🎬', 'dupe')
+        ]
+    )
+    btn.insert(1,
+        [
+            InlineKeyboardButton(f'𝖬𝗈𝗏𝗂𝖾𝗌', 'minfo'),
+            InlineKeyboardButton(f'𝖨𝗇𝖿𝗈', 'info'),
+            InlineKeyboardButton(f"𝖥𝗂𝗅𝖾𝗌: {len(btn)}", callback_data="files")
         ]
     )
     if offset != "":
