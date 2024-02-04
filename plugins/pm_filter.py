@@ -711,6 +711,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto("https://telegra.ph/file/e753f50b93fb047d1f551.jpg")
+        )
     elif query.data == "restric":
         buttons = [[
             InlineKeyboardButton('« ʙᴀᴄᴋ »', callback_data='help')
