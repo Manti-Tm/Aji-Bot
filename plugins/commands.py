@@ -39,16 +39,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('✛ 𝐀𝚍𝚍 𝐌𝚎 𝐓𝚘 𝐘𝚘𝚞𝚛 𝐆𝚛𝚘𝚞𝚙 ✛', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✛ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ✛', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [   
-            InlineKeyboardButton('🔍𝐈𝚗𝚕𝚒𝚗𝚎 𝐒𝚎𝚊𝚛𝚌𝚑', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('❓️𝐇𝚘𝚠 𝐓𝚘 𝐔𝚜𝚎', callback_data='howtoues')
+            InlineKeyboardButton('🔍𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('❓️𝖧𝗈𝗐 𝖳𝗈 𝖴𝗌𝖾', callback_data='howtoues')
         ], [
-            InlineKeyboardButton('❕️𝐇𝚎𝚕𝚙', callback_data='help2'),
-            InlineKeyboardButton('👁‍🗨 𝐀𝚋𝚘𝚞𝚝', callback_data='about'),
-            InlineKeyboardButton('☎️ 𝐂𝚘𝚗𝚝𝚊𝚌𝚝', url='https://t.me/TG_x_filter')
+            InlineKeyboardButton('❕️𝖧𝖾𝗅𝗉', callback_data='help2'),
+            InlineKeyboardButton('👁‍🗨 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
+            InlineKeyboardButton('🤴 𝖮𝗐𝗇𝖾𝗋', url='https://t.me/TG_x_filter')
         ], [
-            InlineKeyboardButton('🎉 𝐉𝚘𝚒𝚗 𝐔𝚙𝚍𝚊𝚝𝚎𝚜 𝐂𝚑𝚊𝚗𝚗𝚎𝚕 🎉', url='https://t.me/cinema_flix_updates')
+            InlineKeyboardButton('🎉 𝖩𝗈𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖫𝗂𝗇𝗄𝗌 🎉', url='https://t.me/cinema_flix_updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
@@ -80,9 +80,9 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton(" 🔄 𝐓𝚛𝚢 𝐀𝚐𝚊𝚒𝚗", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton(" 🔄 𝖳𝗋𝗒 𝖠𝗀𝖺𝗂𝗇", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton(" 🔄 𝐓𝚛𝚢 𝐀𝚐𝚊𝚒𝚗", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton(" 🔄 𝖳𝗋𝗒 𝖠𝗀𝖺𝗂𝗇", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text=FORCE_SUB_TEXT,
@@ -92,16 +92,16 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('✛ 𝐀𝚍𝚍 𝐌𝚎 𝐓𝚘 𝐘𝚘𝚞𝚛 𝐆𝚛𝚘𝚞𝚙 ✛', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✛ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ✛', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [   
-            InlineKeyboardButton('🔍𝐈𝚗𝚕𝚒𝚗𝚎 𝐒𝚎𝚊𝚛𝚌𝚑', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('❓️𝐇𝚘𝚠 𝐓𝚘 𝐔𝚜𝚎', callback_data='howtoues')
+            InlineKeyboardButton('🔍𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('❓️𝖧𝗈𝗐 𝖳𝗈 𝖴𝗌𝖾', callback_data='howtoues')
         ], [
-            InlineKeyboardButton('❕️𝐇𝚎𝚕𝚙', callback_data='help2'),
-            InlineKeyboardButton('👁‍🗨 𝐀𝚋𝚘𝚞𝚝', callback_data='about'),
-            InlineKeyboardButton('☎️ 𝐂𝚘𝚗𝚝𝚊𝚌𝚝', url='https://t.me/TG_x_filter')
+            InlineKeyboardButton('❕️𝖧𝖾𝗅𝗉', callback_data='help2'),
+            InlineKeyboardButton('👁‍🗨 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
+            InlineKeyboardButton('🤴 𝖮𝗐𝗇𝖾𝗋', url='https://t.me/TG_x_filter')
         ], [
-            InlineKeyboardButton('🎉 𝐉𝚘𝚒𝚗 𝐔𝚙𝚍𝚊𝚝𝚎𝚜 𝐂𝚑𝚊𝚗𝚗𝚎𝚕 🎉', url='https://t.me/cinema_flix_updates')
+            InlineKeyboardButton('🎉 𝖩𝗈𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖫𝗂𝗇𝗄𝗌 🎉', url='https://t.me/cinema_flix_updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
