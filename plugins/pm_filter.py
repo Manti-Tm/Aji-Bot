@@ -166,12 +166,14 @@ async def pm_next_page(bot, query):
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("|𝐍𝚎𝚡𝚝⧁", callback_data=f"pmnext_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("|𝐍𝚎𝚡𝚝⧁", callback_data=f"pmnext_{req}_{key}_{n_offset}"),
+             InlineKeyboardButton("🗑 Delete", callback_data=f'spolling#{user}#close_spellcheck')])
     else:
         btn.append(
             [
                 InlineKeyboardButton("⧀𝐁𝚊𝚌𝚔|", callback_data=f"pmnext_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("🗑 ", callback_data=f'spolling#{user}#close_spellcheck'),
                 InlineKeyboardButton("|𝐍𝚎𝚡𝚝⧁", callback_data=f"pmnext_{req}_{key}_{n_offset}")
             ],
         )
@@ -248,17 +250,20 @@ async def next_page(bot, query):
         btn.append(
             [InlineKeyboardButton("⧀𝐁𝚊𝚌𝚔|", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
-                                  callback_data="pages")]
+                                  callback_data="pages"),
+             InlineKeyboardButton("🗑 Delete", callback_data=f'spolling#{user}#close_spellcheck')]
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("|𝐍𝚎𝚡𝚝⧁", callback_data=f"next_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("|𝐍𝚎𝚡𝚝⧁", callback_data=f"next_{req}_{key}_{n_offset}"),
+             InlineKeyboardButton("🗑 Delete", callback_data=f'spolling#{user}#close_spellcheck')])
     else:
         btn.append(
             [
                 InlineKeyboardButton("⧀𝐁𝚊𝚌𝚔|", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"📋 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("🗑 ", callback_data=f'spolling#{user}#close_spellcheck'),
                 InlineKeyboardButton("|𝐍𝚎𝚡𝚝⧁", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
