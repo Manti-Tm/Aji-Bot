@@ -21,11 +21,11 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        buttons = [[           
-            InlineKeyboardButton('📢 𝐔𝚙𝚍𝚊𝚝𝚎𝚜 𝐂𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/cinema_flix_updates'),
-            InlineKeyboardButton('𝐌𝚘𝚟𝚒𝚎 𝐆𝚛𝚘𝚞𝚙 ✨️', url='https://t.me/+iEbhY7mM4oE1OTVl')
+        buttons = [[ 
+            InlineKeyboardButton('✛ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ✛', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('〄 𝐂𝚑𝚎𝚌𝚔 𝐌𝚢 𝐏𝚖 𝐁𝚛𝚘 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton('📢 𝖴𝗉𝖽𝖺𝗍𝖾𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅', url='https://t.me/cinema_flix_updates'),
+            InlineKeyboardButton('𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖦𝗋𝗈𝗎𝗉 ✨️', url='https://t.me/+iEbhY7mM4oE1OTVl')
             ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
@@ -71,7 +71,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🚸 𝐉𝚘𝚒𝚗 𝐎𝚞𝚛 𝐔𝚙𝚍𝚊𝚝𝚎𝚜 𝐂𝚑𝚊𝚗𝚗𝚎𝚕 🚸", url=invite_link.invite_link
+                    " 𝖩𝗈𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ", url=invite_link.invite_link
                 )
             ]
         ]
