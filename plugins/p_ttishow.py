@@ -54,7 +54,7 @@ async def save_group(bot, message):
                         pass
                 temp.MELCOW['welcome'] = await message.reply_photo(
                                                  photo=(WELCOM_PIC),
-                                                 caption=(script.WELCOM_TEXT.format(u.mention, message.chat.title)),
+                                                 caption=(script.WELCOM_TEXT.format(user=u.mention, chat=message.chat.title))
                                                  reply_markup=InlineKeyboardMarkup(
         [[
             InlineKeyboardButton('🧩 𝖲𝖴𝖯𝖯𝖮𝖱𝖳 🧩', url=f"https://t.me/ARAKAL_THERAVAD_MOVIES"),
