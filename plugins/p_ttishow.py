@@ -53,8 +53,8 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_video(
-                                                 video=(MELCOW_VID),
-                                                 caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
+                                                 video=(WELCOM_PIC),
+                                                 caption=(script.WELCOM_TEXT.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
         [[
             InlineKeyboardButton('🧩 𝖲𝖴𝖯𝖯𝖮𝖱𝖳 🧩', url=f"https://t.me/ARAKAL_THERAVAD_MOVIES"),
