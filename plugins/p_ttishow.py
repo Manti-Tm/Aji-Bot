@@ -7,7 +7,6 @@ from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
-import asyncio
 
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
@@ -60,10 +59,7 @@ async def save_group(bot, message):
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
           )
-                
-            if settings["auto_delete"]:
-            await asyncio.sleep(600)
-            await (temp.MELCOW['welcome']).delete()                                                                                          
+                                                                                                 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
