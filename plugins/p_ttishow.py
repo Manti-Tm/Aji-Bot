@@ -49,22 +49,16 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-                if WELCOM_PIC:
+            if WELCOM_PIC:
                 temp.MELCOW['welcome'] = await message.reply_photo(photo=WELCOM_PIC, caption=WELCOM_TEXT.format(user=u.mention, chat=message.chat.title),
                                                                    reply_markup=InlineKeyboardMarkup(
                                                                          [[
                                                                            InlineKeyboardButton('⚜️Movie Updates', url='https://t.me/cinema_flix_updates'),
                                                                            InlineKeyboardButton('⭕️Movie Group', url='https://t.me/Mallu_Movie_Hub_Group')
                                                                         ]]
-                                                                  ))                                                      
-            else:
-                temp.MELCOW['welcome'] = await message.reply_text(text=WELCOM_TEXT.format(user=u.mention, chat=message.chat.title),
-                                                                  reply_markup=InlineKeyboardMarkup(
-                                                                         [[
-                                                                           InlineKeyboardButton('⚜️Movie Updates', url='https://t.me/cinema_flix_updates'),
-                                                                           InlineKeyboardButton('⭕️Movie Group', url='https://t.me/Mallu_Movie_Hub_Group')
-                                                                        ]]
                                                                   ))
+            else:
+                temp.MELCOW['welcome'] = await message.reply_text(text=WELCOM_TEXT.format(user=u.mention, chat=message.chat.title))
                                                                                                  
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
@@ -275,8 +269,3 @@ async def list_chats(bot, message):
         with open('chats.txt', 'w+') as outfile:
             outfile.write(out)
         await message.reply_document('chats.txt', caption="List Of Chats")
-
-
-
-
-
