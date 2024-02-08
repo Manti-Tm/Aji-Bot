@@ -1526,22 +1526,38 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
-            await hehe.delete()          
+            await hehe.delete()
+            fcu = await message.reply(f"<b>😻𝖧𝖾𝗒 :- {message.from_user.mention} \n\n𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖣𝖾𝗅𝖾𝗍𝖾𝖽 🗑 \n(𝗎𝖾 𝖳𝗈 𝖠𝗏𝗈𝗂𝖽 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍𝗌 𝖨𝗌𝗌𝗎𝖾😌)\n\n𝖨𝖥 𝖸𝖮𝖴 𝖶𝖠𝖭𝖳 𝖳𝖧𝖠𝖳 𝖥𝖨𝖫𝖤, 𝖱𝖤𝖰𝖴𝖤𝖲𝖳 𝖠𝖦𝖠𝖨𝖭 \n≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈</b>")
+            await asyncio.sleep(100)
+            await fcu.delete()
+            await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))      
             await asyncio.sleep(IMDB_DELET_TIME)
-            await hmm.delete()            
+            await hmm.delete()
+            fcu = await message.reply(f"<b>😻𝖧𝖾𝗒 :- {message.from_user.mention} \n\n𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖣𝖾𝗅𝖾𝗍𝖾𝖽 🗑 \n(𝗎𝖾 𝖳𝗈 𝖠𝗏𝗈𝗂𝖽 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍𝗌 𝖨𝗌𝗌𝗎𝖾😌)\n\n𝖨𝖥 𝖸𝖮𝖴 𝖶𝖠𝖭𝖳 𝖳𝖧𝖠𝖳 𝖥𝖨𝖫𝖤, 𝖱𝖤𝖰𝖴𝖤𝖲𝖳 𝖠𝖦𝖠𝖨𝖭 \n≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈</b>")
+            await asyncio.sleep(100)
+            await fcu.delete()
+            await message.delete()
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await fek.delete()
+            fcu = await message.reply(f"<b>😻𝖧𝖾𝗒 :- {message.from_user.mention} \n\n𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖣𝖾𝗅𝖾𝗍𝖾𝖽 🗑 \n(𝗎𝖾 𝖳𝗈 𝖠𝗏𝗈𝗂𝖽 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍𝗌 𝖨𝗌𝗌𝗎𝖾😌)\n\n𝖨𝖥 𝖸𝖮𝖴 𝖶𝖠𝖭𝖳 𝖳𝖧𝖠𝖳 𝖥𝖨𝖫𝖤, 𝖱𝖤𝖰𝖴𝖤𝖲𝖳 𝖠𝖦𝖠𝖨𝖭 \n≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈</b>")
+            await asyncio.sleep(100)
+            await fcu.delete()
+            await message.delete()
     else:
         fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
-        await fuk.delete()        
+        await fuk.delete() 
+        fcu = await message.reply(f"<b>😻𝖧𝖾𝗒 :- {message.from_user.mention} \n\n𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖣𝖾𝗅𝖾𝗍𝖾𝖽 🗑 \n(𝗎𝖾 𝖳𝗈 𝖠𝗏𝗈𝗂𝖽 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍𝗌 𝖨𝗌𝗌𝗎𝖾😌)\n\n𝖨𝖥 𝖸𝖮𝖴 𝖶𝖠𝖭𝖳 𝖳𝖧𝖠𝖳 𝖥𝖨𝖫𝖤, 𝖱𝖤𝖰𝖴𝖤𝖲𝖳 𝖠𝖦𝖠𝖨𝖭 \n≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈</b>")
+        await asyncio.sleep(100)
+        await fcu.delete()
+        await message.delete()
     if spoll:
         await msg.message.delete()
 
@@ -1721,6 +1737,10 @@ async def global_filters(client, message, text=False):
                             await asyncio.sleep(IMDB_DELET_TIME)
                             await knd3.delete()
                             await message.delete()
+                            fcu = await message.reply(f"<b>😻𝖧𝖾𝗒 :- {message.from_user.mention} \n\n𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖣𝖾𝗅𝖾𝗍𝖾𝖽 🗑 \n(𝗎𝖾 𝖳𝗈 𝖠𝗏𝗈𝗂𝖽 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍𝗌 𝖨𝗌𝗌𝗎𝖾😌)\n\n𝖨𝖥 𝖸𝖮𝖴 𝖶𝖠𝖭𝖳 𝖳𝖧𝖠𝖳 𝖥𝖨𝖫𝖤, 𝖱𝖤𝖰𝖴𝖤𝖲𝖳 𝖠𝖦𝖠𝖨𝖭 \n≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈</b>")
+                            await asyncio.sleep(100)
+                            await fcu.delete()
+                            await message.delete()
 
                         else:
                             button = eval(btn)
@@ -1734,6 +1754,11 @@ async def global_filters(client, message, text=False):
                             await asyncio.sleep(IMDB_DELET_TIME)
                             await knd2.delete()
                             await message.delete()
+                            await asyncio.sleep(IMDB_DELET_TIME)                            
+                            fcu = await message.reply(f"<b>😻𝖧𝖾𝗒 :- {message.from_user.mention} \n\n𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖣𝖾𝗅𝖾𝗍𝖾𝖽 🗑 \n(𝗎𝖾 𝖳𝗈 𝖠𝗏𝗈𝗂𝖽 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍𝗌 𝖨𝗌𝗌𝗎𝖾😌)\n\n𝖨𝖥 𝖸𝖮𝖴 𝖶𝖠𝖭𝖳 𝖳𝖧𝖠𝖳 𝖥𝖨𝖫𝖤, 𝖱𝖤𝖰𝖴𝖤𝖲𝖳 𝖠𝖦𝖠𝖨𝖭 \n≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈</b>")
+                            await asyncio.sleep(100)
+                            await fcu.delete()
+                            await message.delete()
 
                     elif btn == "[]":
                         knd1 = await client.send_cached_media(
@@ -1744,6 +1769,11 @@ async def global_filters(client, message, text=False):
                         )
                         await asyncio.sleep(IMDB_DELET_TIME)
                         await knd1.delete()
+                        await message.delete()
+                        await asyncio.sleep(IMDB_DELET_TIME)                            
+                        fcu = await message.reply(f"<b>😻𝖧𝖾𝗒 :- {message.from_user.mention} \n\n𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖣𝖾𝗅𝖾𝗍𝖾𝖽 🗑 \n(𝗎𝖾 𝖳𝗈 𝖠𝗏𝗈𝗂𝖽 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍𝗌 𝖨𝗌𝗌𝗎𝖾😌)\n\n𝖨𝖥 𝖸𝖮𝖴 𝖶𝖠𝖭𝖳 𝖳𝖧𝖠𝖳 𝖥𝖨𝖫𝖤, 𝖱𝖤𝖰𝖴𝖤𝖲𝖳 𝖠𝖦𝖠𝖨𝖭 \n≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈</b>")
+                        await asyncio.sleep(100)
+                        await fcu.delete()
                         await message.delete()
 
                     else:
@@ -1756,6 +1786,11 @@ async def global_filters(client, message, text=False):
                         )
                         await asyncio.sleep(IMDB_DELET_TIME)
                         await knd.delete()
+                        await message.delete()
+                        await asyncio.sleep(IMDB_DELET_TIME)                            
+                        fcu = await message.reply(f"<b>😻𝖧𝖾𝗒 :- {message.from_user.mention} \n\n𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖣𝖾𝗅𝖾𝗍𝖾𝖽 🗑 \n(𝗎𝖾 𝖳𝗈 𝖠𝗏𝗈𝗂𝖽 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍𝗌 𝖨𝗌𝗌𝗎𝖾😌)\n\n𝖨𝖥 𝖸𝖮𝖴 𝖶𝖠𝖭𝖳 𝖳𝖧𝖠𝖳 𝖥𝖨𝖫𝖤, 𝖱𝖤𝖰𝖴𝖤𝖲𝖳 𝖠𝖦𝖠𝖨𝖭 \n≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈</b>")
+                        await asyncio.sleep(100)
+                        await fcu.delete()
                         await message.delete()
 
                 except Exception as e:
