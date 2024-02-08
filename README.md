@@ -3,7 +3,7 @@
   <img src="https://graph.org/file/6482f2dbd81c6c5778c5c.jpg" alt="Mr.KD BOTZZ LOGO">
 </p>
 <h1 align="center">
-  <b> CANDY_BOT</b>
+  <b> AJi_MOVIEZ_BOT</b>
 </h1>
 
 
