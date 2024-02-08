@@ -1630,8 +1630,8 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        one_button = InlineKeyboardMarkup([[InlineKeyboardButton("🔎𝗚𝗢𝗢𝗚𝗟𝗘🔍", url="https://www.google.com/search?q={reqst_gle}")]])
-        k = await msg.reply("<b><u>🤔 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀 𝖬𝗂𝗌𝗍𝖺𝗄𝖾 𝖡𝗋𝗈 ❗</u>\n\n➥ നിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക..!!\n\n➥ 𝖣𝗈𝗇'𝗍 𝖶𝗈𝗋𝗋𝗒 𝖢𝗁𝗈𝗈𝗌𝖾 𝖳𝗁𝖾 𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖮𝗇𝖾 𝖡𝖾𝗅𝗈𝗐..!!</b>", reply_markup = one_button)
+        one_button = InlineKeyboardMarkup([[InlineKeyboardButton("⭕️OTT UPDATES⭕️", url="https://t.me/cinema_flix_updates")]])
+        k = await msg.reply("<b>😻Hello Bro Please Join OTT Updates Channel👇</b>", reply_markup = one_button)
         await asyncio.sleep(8)
         await k.delete()
         return
