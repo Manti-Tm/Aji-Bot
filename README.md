@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://graph.org/file/6482f2dbd81c6c5778c5c.jpg" alt="Mr.KD BOTZZ LOGO">
+  <img src="https://graph.org/file/09977e62955e6dc9259e8.jpg" alt="Mr.KD BOTZZ LOGO">
 </p>
 <h1 align="center">
   <b> AJi_MOVIEZ_BOT</b>
