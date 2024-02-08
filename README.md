@@ -6,46 +6,25 @@
   <b> AJi_MOVIEZ_BOT</b>
 </h1>
 
-## TELAGRAM SUPPORT 
 
-* [![Movie Group](https://t.me/MatRixBotzTGsupport)
+## 𝖥𝖾𝖺𝗍𝗎𝗋𝖾𝗌
 
+- [𝗑] 𝖠𝗎𝗍𝗈 𝖥𝗂𝗅𝗍𝖾𝗋
+- [𝗑] 𝖬𝖺𝗇𝗎𝖺𝗅 𝖥𝗂𝗅𝗍𝖾𝗋
+- [𝗑] 𝖨𝖬𝖣𝖡
+- [𝗑] 𝗉𝗋𝖾𝖽𝗏𝖽 𝖽𝖾𝗅𝖾𝗍𝖾 𝗈𝗉𝗍𝗂𝗈𝗇𝗌
+- [𝗑] 𝖠𝖽𝗆𝗂𝗇 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌
+- [𝗑] 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍
+- [𝗑] 𝖨𝗇𝖽𝖾𝗑
+- [𝗑] 𝖨𝖬𝖣𝖡 𝗌𝖾𝖺𝗋𝖼𝗁
+- [𝗑] 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁
+- [𝗑] 𝖱𝖺𝗇𝖽𝗈𝗆 𝗉𝗂𝖼𝗌
+- [𝗑] 𝗂𝖽𝗌 𝖺𝗇𝖽 𝖴𝗌𝖾𝗋 𝗂𝗇𝖿𝗈 
+- [𝗑] 𝖲𝗍𝖺𝗍𝗌, 𝖴𝗌𝖾𝗋𝗌, 𝖢𝗁𝖺𝗍𝗌, 𝖡𝖺𝗇, 𝖴𝗇𝖻𝖺𝗇, 𝖫𝖾𝖺𝗏𝖾, 𝖣𝗂𝗌𝖺𝖻𝗅𝖾, 𝖢𝗁𝖺𝗇𝗇𝖾𝗅
+- [𝗑] 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀 𝖢𝗁𝖾𝖼𝗄 𝖥𝖾𝖺𝗍𝗎𝗋𝖾
+- [𝗑] 𝖢𝗎𝗌𝗍𝗈𝗆 𝖥𝗂𝗅𝖾 𝖢𝖺𝗉𝗍𝗂𝗈𝗇
 
-## Features
-
-- [x] Auto Filter
-- [x] Manual Filter
-- [x] IMDB
-- [x] predvd delete options
-- [x] Admin Commands
-- [x] Broadcast
-- [x] Index
-- [x] IMDB search
-- [x] Inline Search
-- [x] Random pics
-- [x] ids and User info 
-- [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
-- [x] Spelling Check Feature
-- [x] Custom File Caption
-
-### Required Variables
-* `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
-* `API_ID`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `CHANNELS`: Username or ID of channel or group. Separate multiple IDs by space
-* `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
-* `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
-* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
-* `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
-* `Support Chat` : Username of a Support Group / ADMIN. ( Should be username without @ and not ID
-### Optional Variables
-* `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
-* `USE_CAPTION_FILTER` : Whether bot should use captions to improve search results. (True False)
-* `CUSTOM_FILE_CAPTION` : A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding
-* `CACHE_TIME` : The maximum amount of time in seconds that the result of the inline query may be cached on the server
-* `IMDB` : Imdb, the view of information when making True/False
-* `SINGLE_BUTTON` : choose b/w single or double buttons 
-* `P_TTI_SHOW_OFF` : Customize Result Buttons to Callback or Url by (True = url / False = callback)
+#
 
 
 ## Commands
