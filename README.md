@@ -8,7 +8,7 @@
 
 ## TELAGRAM SUPPORT 
 
-* [![Matrix BOTZ](https://img.shields.io/static/v1?label=MovieGroup&message=&color=critical)](https://t.me/MatRixBotzTGsupport)
+* [![Matrix BOTZ](https://img.shields.io/static/v1?label=MovieGroup)](https://t.me/MatRixBotzTGsupport)
 
 
 ## Features
