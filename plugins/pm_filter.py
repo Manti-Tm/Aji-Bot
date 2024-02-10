@@ -235,7 +235,7 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🎬 {search} 🎬', 'dupe')
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
         ]
     )
     btn.insert(1,
@@ -1414,7 +1414,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🎬 {search} 🎬', 'dupe')
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
         ]
     )
     btn.insert(1,
