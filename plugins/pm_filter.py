@@ -297,8 +297,7 @@ async def advantage_spoll_choker(bot, query):
         if files:
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
-        else:
-            
+        else: 
             k=await query.message.reply_photo(
                       photo=(MOVIE),
                       caption=(NOTFOUND),
@@ -313,9 +312,8 @@ async def advantage_spoll_choker(bot, query):
                      parse_mode='html'
               )
             
-            await asyncio.sleep(50)
+            await asyncio.sleep(10)
             await k.delete()
-
 
 
 @Client.on_callback_query(filters.regex(r"^languages#"))
