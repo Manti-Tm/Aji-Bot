@@ -4,7 +4,7 @@ from Script import script
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, SINGLE_BUTTON, PROTECT_CONTENT, \
-    SPELL_CHECK_REPLY, IMDB_TEMPLATE, SPELL_IMG, IMDB_DELET_TIME, NO_RESULTS_MSG, START_MESSAGE, PMFILTER, G_FILTER, BUTTON_LOCK, SUPPORT_CHAT_ID, BUTTON_LOCK_TEXT, NOR_IMG, MOVIE
+    SPELL_CHECK_REPLY, IMDB_TEMPLATE, SPELL_IMG, IMDB_DELET_TIME, NO_RESULTS_MSG, START_MESSAGE, PMFILTER, G_FILTER, BUTTON_LOCK, SUPPORT_CHAT_ID, BUTTON_LOCK_TEXT, NOR_IMG, MOVIE, NOTFOUND
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters, enums 
@@ -27,8 +27,6 @@ SPELL_CHECK = {}
 PM_SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
-NOTFOUND = "<b>➠ sᴏʀʀʏ ᴍᴏᴠɪᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ​...😢</b>\n\n <b>➠ ɴᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀ ʙᴀsᴇ ᴏʀ ɴᴏᴛ ʏᴇᴛ ʀᴇʟᴇᴀsᴇᴅ​</b>\n\n<b>➠ᴍᴇɴᴛɪᴏɴ ᴛʜᴇ ᴀᴅᴍɪɴ ɪꜰ ʏᴏᴜ ᴀʀᴇ sᴜʀᴇ ɪᴛ ʜᴀs ʙᴇᴇɴ ʀᴇʟᴇᴀsᴇᴅ​</b>\n\n<b>➠ᴍᴇɴᴛɪᴏɴ ᴅᴇᴛᴀɪʟs ᴄᴀɴ ʙᴇ ᴛᴀᴋᴇɴ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ ʜᴏᴡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ʙᴜᴛᴛᴏɴ ᴛʜᴀᴛ ʏᴏᴜ sᴇᴇ​</b>"
-
 
 @Client.on_message(filters.command('autofilter') & filters.group & admin_fliter)
 async def fil_mod(client, message): 
