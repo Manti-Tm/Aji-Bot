@@ -294,7 +294,8 @@ async def advantage_spoll_choker(bot, query):
         if files:
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
-        else: 
+        else:
+
             k=await query.message.reply_photo(
                       photo=(MOVIE),
                       caption=(NOTFOUND),
@@ -328,6 +329,7 @@ async def pm_spoll_tester(bot, query):
         k = (movie, files, offset, total_results)
         await pm_AutoFilter(bot, query, k)
     else:
+        
         k=await query.message.reply_photo(
                       photo=(MOVIE),
                       caption=(NOTFOUND),
