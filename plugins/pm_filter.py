@@ -314,6 +314,7 @@ async def advantage_spoll_choker(bot, query):
               await k.delete()
 
 
+
 @Client.on_callback_query(filters.regex(r"^pmspolling"))
 async def pm_spoll_tester(bot, query):
     _, user, movie_ = query.data.split('#')
@@ -347,6 +348,7 @@ async def pm_spoll_tester(bot, query):
         
          await asyncio.sleep(10)
          await k.delete()
+
 
 
 @Client.on_callback_query()
