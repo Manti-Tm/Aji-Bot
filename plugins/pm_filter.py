@@ -296,8 +296,7 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
 
-            k=await query.message.reply_photo(
-                      photo=(MOVIE),
+            k=await query.message.reply_text(
                       caption=(NOTFOUND),
                       reply_markup=InlineKeyboardMarkup(
                                               [[
@@ -330,8 +329,7 @@ async def pm_spoll_tester(bot, query):
         await pm_AutoFilter(bot, query, k)
     else:
         
-        k=await query.message.reply_photo(
-                      photo=(MOVIE),
+        k=await query.message.reply_text(
                       caption=(NOTFOUND),
                       reply_markup=InlineKeyboardMarkup(
                                               [[
