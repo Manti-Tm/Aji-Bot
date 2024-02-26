@@ -308,10 +308,10 @@ async def advantage_spoll_choker(bot, query):
                                              ]] 
                        ),
                        parse_mode='html'
-                )
+            )
             
-              await asyncio.sleep(10)
-              await k.delete()
+         await asyncio.sleep(10)
+         await k.delete()
 
 
 
@@ -342,12 +342,12 @@ async def pm_spoll_tester(bot, query):
                                               InlineKeyboardButton(" ʜᴏᴡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ​ ᴀᴅᴍɪɴ​", url="https://graph.org/How-To-Get-Movies-From-Bot-12-03")
                                            ]] 
                    
-                  ),
-                  parse_mode='html'
-           )
+                   ),
+                   parse_mode='html'
+        )
         
-         await asyncio.sleep(10)
-         await k.delete()
+      await asyncio.sleep(10)
+      await k.delete()
 
 
 
