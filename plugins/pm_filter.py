@@ -296,7 +296,7 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
 
-            k=await query.message.reply_text(
+            k = await query.message.edit(
                       caption=(NOTFOUND),
                       reply_markup=InlineKeyboardMarkup(
                                               [[
@@ -329,7 +329,7 @@ async def pm_spoll_tester(bot, query):
         await pm_AutoFilter(bot, query, k)
     else:
         
-        k=await query.message.reply_text(
+        k = await query.message.edit(
                       caption=(NOTFOUND),
                       reply_markup=InlineKeyboardMarkup(
                                               [[
