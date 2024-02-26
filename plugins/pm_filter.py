@@ -327,25 +327,9 @@ async def pm_spoll_tester(bot, query):
         k = (movie, files, offset, total_results)
         await pm_AutoFilter(bot, query, k)
     else:
-        
-        k = await query.message.reply_photo(
-                    photo=(MOVIE),
-                    caption=(NOTFOUND),
-                    reply_markup=InlineKeyboardMarkup(
-                                           [[
-                                              InlineKeyboardButton('♻️ ᴍᴀʟʏᴀʟᴀᴍ  ♻️', 'trtoml'),
-                                              InlineKeyboardButton("ʙᴏᴛ oᴡɴᴇʀ", url="https://t.me/Master_brooi")
-                                           ],[
-                                              InlineKeyboardButton(" ʜᴏᴡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ​ ᴀᴅᴍɪɴ​", url="https://graph.org/How-To-Get-Movies-From-Bot-12-03")
-                                           ]] 
-                   
-                   ),
-                   parse_mode='html'
-        )
-        
-      await asyncio.sleep(10)
-      await k.delete()
-
+        k = await query.message.edit('This Movie Not Found In DataBase')
+        await asyncio.sleep(10)
+        await k.delete()
 
 
 @Client.on_callback_query()
