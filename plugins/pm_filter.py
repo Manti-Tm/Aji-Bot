@@ -296,8 +296,7 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
             one_button = InlineKeyboardMarkup([[InlineKeyboardButton("⭕️OTT UPDATES⭕️", url="https://t.me/cinema_flix_updates")]])
-            k = await msg.reply('This Movie Not Found In DataBase')
-            reply_markup = one_button)
+            k = await msg.reply('This Movie Not Found In DataBase', reply_markup = one_button)
             await asyncio.sleep(10)
             await k.delete()
            
@@ -318,8 +317,7 @@ async def pm_spoll_tester(bot, query):
         await pm_AutoFilter(bot, query, k)
     else:
         one_button = InlineKeyboardMarkup([[InlineKeyboardButton("⭕️OTT UPDATES⭕️", url="https://t.me/cinema_flix_updates")]])
-        k = await query.message.edit('This Movie Not Found In DataBase')
-        reply_markup = one_button)
+        k = await query.message.edit('This Movie Not Found In DataBase', reply_markup = one_button)
         await asyncio.sleep(10)
         await k.delete()
 
